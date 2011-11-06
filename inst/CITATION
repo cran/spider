@@ -1,0 +1,11 @@
+citHeader("To cite spider in a publication use:")
+
+citEntry(entry="Article",
+	title = "{SPIDER}: an {R} package for the analysis of species identity and evolution, with particular reference to {DNA} barcoding",
+        author = personList(as.person("Samuel D. J. Brown"),as.person("Rupert A. Collins"), as.person("Stephane Boyer"), as.person("Marie-Caroline Lefort"), as.person("Jagoba Malumbres-Olarte"), as.person("Cor J. Vink"), as.person("Robert H. Cruickshank")),
+	journal = "Molecular Ecology Resources",
+  	year = "In press",
+	
+        textVersion = "Brown S. D. J., Collins R. A., Boyer S., Lefort M.-C., Malumbres-Olarte J., Vink C. J., & Cruickshank R. H. In Press. SPIDER: an R package for the analysis of species identity and evolution, with particular reference to DNA barcoding. Molecular Ecology Resources")
+
+citFooter("As spider is developing rapidly, you may want to cite also its version number (found with 'library(help = spider)').")
