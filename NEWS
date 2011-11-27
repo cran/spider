@@ -1,0 +1,15 @@
+############################################
+                                SPIDER VERSION 1.1-1
+				Released 27 November 2011
+				
+
+-- tiporder: "labels" option added to toggle between returning the labels (when "labels"=TRUE), or returning the indices (when "labels"=FALSE).
+
+############################################
+                                SPIDER VERSION 1.1-0
+				Released 6 November 2011
+
+-- Initial release onto CRAN
+-- No known issues
+
+############################################

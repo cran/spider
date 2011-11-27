@@ -17,8 +17,8 @@ More information, including a tutorial on the use of spider can be found at \cod
 \tabular{ll}{
 Package: \tab spider\cr
 Type: \tab Package\cr
-Version: \tab 1.1-0\cr
-Date: \tab 2011-11-06\cr
+Version: \tab 1.1-1\cr
+Date: \tab 2011-11-27\cr
 License: \tab GPL\cr
 LazyLoad: \tab yes\cr
 }

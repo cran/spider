@@ -1,4 +1,4 @@
-citHeader("To cite spider in a publication use:")
+citHeader("To cite spider in a publication, please use:")
 
 citEntry(entry="Article",
 	title = "{SPIDER}: an {R} package for the analysis of species identity and evolution, with particular reference to {DNA} barcoding",

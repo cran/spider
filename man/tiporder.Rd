@@ -10,17 +10,18 @@ Provides an ordered vector of tip labels, corresponding to their position on the
 }
 
 \usage{
-tiporder(phy)
+tiporder(phy, labels = TRUE)
 }
 
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{phy}{A tree of class `phylo'.}
+  \item{labels}{Logical. Should labels be printed? If FALSE, the indices are given. Default of TRUE.}
 }
 \details{
 }
 \value{
-A character vector giving the names of the tip in the order of their position on the tree. The order is that from top to bottom when the tree is plotted with \code{direction = "rightwards"}.
+A character or numeric vector giving the names of the tip in the order of their position on the tree. The order is that from top to bottom when the tree is plotted with \code{direction = "rightwards"}.
 }
 \references{
 %% ~put references to the literature/web site here ~
@@ -41,6 +42,7 @@ Samuel Brown <s_d_j_brown@hotmail.com>
 data(anoteropsis)
 anoTree <- nj(dist.dna(anoteropsis))
 tiporder(anoTree)
+tiporder(anoTree, labels = FALSE)
 
 
 data(woodmouse)
