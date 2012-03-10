@@ -1,6 +1,6 @@
-775f9aa4135f63f51b8af92b0fdeb322 *DESCRIPTION
+04a80b1eee03fe0357d09675e8e026ab *DESCRIPTION
 8c59543cbb8c8f589241363a94faf853 *NAMESPACE
-5f0de5e82e35b8b1f1e4356b8ef9f003 *NEWS
+e8473b5d0f99e8fe9e04f4cca8355faa *NEWS
 e62af89c4a267ddca83f35e3fe45aee2 *R/bestCloseMatch.R
 0e75edb6a63d0b769545a3443f1e3e14 *R/chaoHaplo.R
 4eff78217d84219aaebc735c28541926 *R/checkDNA.R
@@ -20,10 +20,10 @@ f67592797d2df601b3b5bbc8f9aabd61 *R/plot.slidWin.R
 a2241669fe8df719b7c5236be8d14d73 *R/polyBalance.R
 9ccaee840a2e7e9a2c44569573cd29cf *R/rankSlidWin.R
 ee1b1085a3b5f06287553aa916691c4a *R/read.BOLD.R
-571a8fbb5980c912444fb7835c9a79cb *R/read.GB.R
+c8ab5fa44a4ed546ccf4ff77f18d0c4e *R/read.GB.R
 ffc7ad16cf592a257baa14cd85a77764 *R/rmSingletons.R
 01dce3948a335e691f124a160208aad6 *R/rosenberg.R
-9cf671623ad1debdf7ea8a8cf9891ed6 *R/search.BOLD.R
+12f6fa948324572903f7f9ba30676a39 *R/search.BOLD.R
 62452208c0f3b1f49b6c33ea7023ab65 *R/seeBarcode.R
 29ac3818d61baed21e8e78b5d57730f1 *R/seqStat.R
 5781e96e6e54232f5b4bad3e37cbc9c1 *R/slideAnalyses.R
@@ -32,6 +32,7 @@ ffc7ad16cf592a257baa14cd85a77764 *R/rmSingletons.R
 74cfd49a4b8abc658fcb8ceb63f7ba03 *R/slidingWindow.R
 3511609b716c4584fc450e51f8822014 *R/sppDist.R
 9d887177ee46fd110413143c6aaa0773 *R/sppDistMatrix.R
+6adee9b3f4f7e03f565c8dc8ab0e806b *R/stats.BOLD.R
 bc47e61e1f0c547cd7507e8d41475b2e *R/tajima.K.R
 4d17fa0332ad6b57b1d72c10009e8ede *R/tclust.R
 cfdccf7e0e59ae4440ceee670cb1b5cf *R/threshID.R
@@ -39,8 +40,8 @@ cfdccf7e0e59ae4440ceee670cb1b5cf *R/threshID.R
 3b2a366119a12d521dd36e1089d668af *R/tiporder.R
 88d340c437eb3fcbc80d5b27cec8fcb2 *R/titv.R
 3aa19732f60894c292c8bed739eac649 *R/tree.comp.R
-f07ea0096b93862df19bf27ab7187c5b *data/anoteropsis.rda
-9f9b72cea81ae4ee1ae09131d65de5e0 *data/dolomedes.rda
+62aa617f0b1bcc65be8900150c5bdeb5 *data/anoteropsis.rda
+c64279f14b45fa9d42cb98bc20477d06 *data/dolomedes.rda
 a2df936a548ef35e6e933b172aa14dbb *inst/CITATION
 151dc35bb3daf70a1b274c7bb064e9c7 *man/anoteropsis.Rd
 797a4244cc729577f07c8ea8771c0f63 *man/chaoHaplo.Rd
@@ -59,7 +60,7 @@ c51185d75775b4412904cc5612a3bab9 *man/plot.haploAccum.Rd
 c7d57e84e2edd11e5193f4ca98ab7a24 *man/plot.slidWin.Rd
 f45334dd39f859e41f8c1aab92eb915c *man/polyBalance.Rd
 d401b5bb7b5ab0b019689a744b602e27 *man/rankSlidWin.Rd
-d2a71b62235fd599278b3ac19419e453 *man/read.BOLD.Rd
+5132d4635290869332ffa7c672a7ba5f *man/read.BOLD.Rd
 ed53268bfeefd3e3d63bf5a349d7ea67 *man/read.GB.Rd
 5c0a75b21e28ac1b8fe2973ae2b1ff6a *man/rmSingletons.Rd
 04988562fb02ee32fecac1254f1d4a3d *man/rosenberg.Rd
@@ -69,7 +70,7 @@ eb06146f5bec1db5d3f05e5a3a0e09ba *man/seeBarcode.Rd
 271f80bd6609281600a941c8068d35f1 *man/slideBoxplots.Rd
 8e2eb3ec2d508d3d6557f8a63df7bf36 *man/slideNucDiag.Rd
 54e00f707dc208f69e79e14546a880b1 *man/slidingWindow.Rd
-609bda68528afd18585f71bf0b28a3d8 *man/spider-package.Rd
+bca7780a9fcf16e23fd897a439e9a23d *man/spider-package.Rd
 5f33b97161999a4f4da3c8e436937cc6 *man/sppDist.Rd
 9eba8a5aec559cfab3c47c8f8afe6c41 *man/sppDistMatrix.Rd
 f8c86bd78eb25bf45acbea3f8193688c *man/sppVector.Rd

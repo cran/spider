@@ -8,8 +8,8 @@ function(access.nb, seq.names = access.nb, species.names = TRUE, gene=TRUE, acce
         b <- 400 * i
         if (i == nrequest) 
             b <- N
-        URL <- paste("http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=", 
-            paste(access.nb[a:b], collapse = ","), "&rettype=gb", 
+        URL <- paste("http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=", 
+            paste(access.nb[a:b], collapse = ","), "&rettype=gb&retmode=text", 
             sep = "")
         X <- c(X, scan(file = URL, what = "", sep = "\n", quiet = TRUE))
     }

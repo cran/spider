@@ -1,4 +1,14 @@
 ############################################
+                                SPIDER VERSION 1.1-2
+				Released 10 March 2012
+				
+
+-- read.GB: modified to work with eFetch version 2.0 (http://www.ncbi.nlm.nih.gov/books/NBK25499/)
+-- read.BOLD: help file updated
+-- search.BOLD: Modified to work with BOLDsystems v 3.0
+-- Functions added: stats.BOLD
+
+############################################
                                 SPIDER VERSION 1.1-1
 				Released 27 November 2011
 				

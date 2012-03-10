@@ -1,12 +1,14 @@
 \name{read.BOLD}
 \alias{read.BOLD}
 \alias{search.BOLD}
+\alias{stats.BOLD}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Downloads DNA sequences from the Barcode of Life Database (BOLD)}
 
 \description{These functions allow DNA sequences to be downloaded from the Barcode of Life Database (BOLD).}
 
-\usage{search.BOLD(taxon)
+\usage{search.BOLD(taxon, exhaustive = FALSE)
+stats.BOLD(taxon)
 read.BOLD(IDs)}
 
 
@@ -14,10 +16,13 @@ read.BOLD(IDs)}
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{taxon}{A character vector of the names of the taxa of interest.}
+  \item{exhaustive}{Logical. Should the function search for more than 500 process IDs? Default of FALSE.}
   \item{IDs}{A character vector containing BOLD process ID numbers.}
 }
 
-\details{\code{search.BOLD} retrieves BOLD process identification numbers for any given taxon using BOLD's eSearch system.
+\details{\code{search.BOLD} retrieves BOLD process identification numbers for any given taxon using the API for BOLD version 3.0. By default, it only returns the first 500 process IDs for the given taxon. By selecting the option \code{exhaustive = TRUE}, the function can be made to search for more than 500 process IDs, but is much slower.
+
+\code{stats.BOLD} retrieves the total number of records for the given taxon.
 
 \code{read.BOLD} downloads the sequences associated with the process identification numbers using the eFetch web service offered by BOLD to enable batch retrieval of records.
 
@@ -30,15 +35,19 @@ read.BOLD(IDs)}
 }
 
 \section{Warning}{
-On 26 Oct 2011, attempts to access records using the eFetch system through a web browser resulted in an error, saying that eFetch and eSearch are offline for maintainance. To test if these services are running, check the following URL in a web browser: 
+On 26 Oct 2011, attempts to access records using the eFetch system through a web browser resulted in an error, saying that eFetch and eSearch are offline for maintainance. As of 7 March 2012, both functions have been modified to interface with the new BOLD architecture, and work as expected.
 
-\url{http://services.boldsystems.org/eFetch.php?record_type=specimen&id_type=sampleid&ids=DQ116162&return_type=xml}
+To test if these services are running, check the following URLs in a web browser:
+\url{http://v3.boldsystems.org/index.php/Public_Ajax_RecordList?query=Pisauridae}
+\url{http://services.boldsystems.org/eFetch.php?record_type=full&id_type=processid&ids=(ARONT259-09)&return_type=text}
 }
 
 \references{
 BOLD web services:
 \url{http://services.boldsystems.org/}.
 
+BOLD version 3.0
+\url{http://v3.boldsystems.org/}.
 }
 
 \author{
@@ -58,6 +67,10 @@ Samuel Brown <s_d_j_brown@hotmail.com>
 
 \examples{
 \dontrun{
+stats.BOLD("Pisauridae")
+
+search.BOLD(c("Danio kyathit", "Dolomedes", "Sitona discoideus"))
+
 nn <- search.BOLD("Pisauridae")
 pisaurid <- read.BOLD(nn)
 
