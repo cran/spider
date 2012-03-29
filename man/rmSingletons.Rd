@@ -21,21 +21,9 @@ When \code{exclude = TRUE} (the default), singletons are excluded and the vector
 \value{
 Returns a numeric vector giving the indices of the selected individuals.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
 
 \author{Samuel Brown <s_d_j_brown@hotmail.com>}
 
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
 data(anoteropsis)
 anoDist <- dist.dna(anoteropsis)

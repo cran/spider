@@ -27,14 +27,8 @@ A list with two elements:
 \item{intra}{A numeric vector containing ALL intra-specific pairwise distances.}
 }
 
-\references{
-%% ~put references to the literature/web site here ~
-}
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

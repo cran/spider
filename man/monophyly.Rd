@@ -52,14 +52,9 @@ Rerooting is done on the longest internal edge in the tree returned by \code{nj(
 	\item{results}{A logical vector, stating if each species is monophyletic with a bootstrap support higher than the given threshold.}
 	\item{BSvalues}{A numeric vector giving the bootstrap proportions for each node of \code{phy}.}
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

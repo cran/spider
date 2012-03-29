@@ -27,10 +27,6 @@ Rosenberg, N. A. (2007). Statistical tests for taxonomic distinctiveness from ob
 Samuel Brown <s_d_j_brown@hotmail.com>
 }
 
-\note{
-%%  ~~further notes~~
-}
-
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{

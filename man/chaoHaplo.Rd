@@ -28,9 +28,6 @@ Vink, C. J., McNeill, M. R., Winder, L. M., Kean, J. M., and Phillips, C. B. (20
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
 }
-\note{
-%%  ~~further notes~~
-}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

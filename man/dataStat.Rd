@@ -33,21 +33,13 @@ The value \code{NULL} can be passed to \code{gen} if genera are not of interest 
 \value{
 A table giving the number of genera and species in the dataset; giving the minimum, maximum, mean and median number of individuals per species, and the number of species below the given threshold.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{
 Rupert Collins <rupertcollins@gmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
 data(anoteropsis)
 #Species vector

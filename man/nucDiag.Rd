@@ -20,9 +20,8 @@ An object of class 'DNAbin'.
 The species vector (see \code{\link{sppVector}}).
 }
 }
-\details{
 
-}
+
 \value{
 A list giving the pure, simple diagnostic nucleotides (i.e. those nucleotides that are fixed within species and different from all other species) for each species in the species vector. A result of \code{integer(0)} indicates there are no diagnostic nucleotides for those species.
 }
@@ -33,14 +32,11 @@ based DNA barcoding. _Molecular Ecology Resources_ *8* 1256-1259
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
 }
-\note{
-%%  ~~further notes~~
-}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+	\code{\link{slideNucDiag}}
 }
 \examples{
 data(anoteropsis)

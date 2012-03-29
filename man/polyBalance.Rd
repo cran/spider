@@ -20,16 +20,8 @@ The function extends \code{\link{balance}} to allow the balance of a tree with p
 A numeric matrix with two columns and one row for each node of the tree. The columns give the numbers of descendants on each node. Non-dichotomous nodes are reported as 'NA'.
 }
 
-\references{
-
-}
-
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-}
-
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

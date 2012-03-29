@@ -48,14 +48,9 @@ A list with
  \item{boxplot_out}{Logical. Boxplots calculated? Always TRUE.}
  \item{method}{The method used for calculating boxplots. \code{"overall", "interAll"} or \code{"nonCon"}.}
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

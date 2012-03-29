@@ -18,26 +18,17 @@ tiporder(phy, labels = TRUE)
   \item{phy}{A tree of class `phylo'.}
   \item{labels}{Logical. Should labels be printed? If FALSE, the indices are given. Default of TRUE.}
 }
-\details{
-}
+
 \value{
 A character or numeric vector giving the names of the tip in the order of their position on the tree. The order is that from top to bottom when the tree is plotted with \code{direction = "rightwards"}.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
 data(anoteropsis)
 anoTree <- nj(dist.dna(anoteropsis))

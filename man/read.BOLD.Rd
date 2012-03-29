@@ -54,10 +54,6 @@ BOLD version 3.0
 Samuel Brown <s_d_j_brown@hotmail.com>
 }
 
-\note{
-%%  ~~further notes~~
-}
-
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{

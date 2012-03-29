@@ -36,7 +36,7 @@ function(slidWin, criteria = "mean_distance", num = 10){
 		lowVal <- as.data.frame(lapply(dFrame, function(x) rank(x, ties.method="min")))
 		dfVals[ , low] <- lowVal[ , low]
 	}
-	if(criteria == "all") rowOrd <- order(apply(dfVals[ , -1], MARGIN=1, FUN=sum))
+	if("all" %in% criteria) rowOrd <- order(apply(dfVals[ , -1], MARGIN=1, FUN=sum))
 		else{
 			ordNum <- which(measures %in% criteria)
 			if(length(criteria) > 1) rowOrd <- order(apply(dfVals[ , ordNum], MARGIN=1, FUN=sum))

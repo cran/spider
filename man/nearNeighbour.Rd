@@ -50,10 +50,6 @@ Meier, R., Shiyang, K., Vaidya, G., & Ng, P. (2006). DNA barcoding and taxonomy 
 Samuel Brown <s_d_j_brown@hotmail.com>
 }
 
-\note{
-%%  ~~further notes~~
-}
-
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{

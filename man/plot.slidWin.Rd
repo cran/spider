@@ -28,14 +28,9 @@ When boxplots of methods \code{nonCon} and \code{interAll}, the y-axis limits ar
 \value{
 Plots graphs depending on the options given to \code{\link{slideAnalyses}} or \code{\link{slideBoxplots}}.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

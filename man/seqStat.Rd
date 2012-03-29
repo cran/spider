@@ -27,21 +27,13 @@ This function considers bases coded as '?', 'N' and '-' as missing data.
 \value{
 A table giving the minimum, maximum, mean and median sequence lengths, and the number of sequences with lengths below the given threshold.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{
 Rupert Collins <rupertcollins@gmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
 data(anoteropsis)
 seqStat(anoteropsis)

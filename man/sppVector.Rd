@@ -17,16 +17,8 @@ There is an easy way and a hard way to create species vectors. The hard way is t
 The easy way is to add species designations into your data matrix from the beginning in such a way that it is easy to use R's data manipulation tools to create a species vector from the names of your data. See the examples for a few ways to do this.
 }
 
-\references{
-%% ~put references to the literature/web site here ~
-}
-
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-}
-
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

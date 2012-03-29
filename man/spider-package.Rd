@@ -17,8 +17,8 @@ More information, including a tutorial on the use of spider can be found at \cod
 \tabular{ll}{
 Package: \tab spider\cr
 Type: \tab Package\cr
-Version: \tab 1.1-2\cr
-Date: \tab 2012-03-10\cr
+Version: \tab 1.1-3\cr
+Date: \tab 2012-03-29\cr
 License: \tab GPL\cr
 LazyLoad: \tab yes\cr
 }
@@ -54,6 +54,4 @@ Brown S. D. J., Collins R. A., Boyer S., Lefort M.-C., Malumbres-Olarte J., Vink
 
 \code{\link{ape-package}}, 
 \code{\link{pegas-package}}.
-}
-\examples{
 }

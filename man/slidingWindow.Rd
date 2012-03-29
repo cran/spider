@@ -28,15 +28,8 @@ Analyses can be conducted on each window using \code{\link{lapply}}.
 \value{A list of `DNAbin' objects, with each alignment being \code{width} bases in length. The list has length of the DNA alignment minus the width. The positions covered by each window can be retreived with \code{attr(x, "window")}.
 }
 
-\references{
-%% ~put references to the literature/web site here ~
-}
-
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

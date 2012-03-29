@@ -41,21 +41,13 @@ If \code{propZero=FALSE}, a numeric vector giving the distance of the closest no
 
 If \code{propZero=TRUE}, a single number giving the proportion of zero distances. 
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
 data(anoteropsis)
 anoDist <- dist.dna(anoteropsis)

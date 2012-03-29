@@ -33,14 +33,9 @@ Determines the number of diagnostic nucleotides for each species in each window.
 \value{
 A matrix giving the number of diagnostic nucleotides for each species (rows) in each window (columns).
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

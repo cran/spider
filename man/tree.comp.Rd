@@ -49,9 +49,6 @@ Penny, D. and Hendy, M. D. (1985) The use of tree comparison metrics. _Systemati
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
 }
-\note{
-%%  ~~further notes~~
-}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

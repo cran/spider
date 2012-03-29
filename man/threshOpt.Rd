@@ -40,9 +40,6 @@ comprehensive sampling. _PLoS Biology_ *3* (12), 2229-2238.
 \author{
 Rupert Collins <rupertcollins@gmail.com>
 }
-\note{
-%%  ~~further notes~~
-}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

@@ -38,14 +38,9 @@ This function is a modification of \code{\link[ape:ape-package]{read.GenBank}} t
 \value{
 A 'DNAbin' object with the following attributes: \code{"species"}, \code{"gene"}, and \code{"accession_num"}.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

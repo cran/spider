@@ -43,14 +43,9 @@ The \code{"all"} criterion returns the windows that have the highest cumulative 
 \value{
 A data frame giving the values of the measures calculated by \code{\link{slideAnalyses}}, ranked to show the top 10 positions based on the criterion given.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

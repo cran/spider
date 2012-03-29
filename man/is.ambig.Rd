@@ -25,15 +25,7 @@ Ambiguous bases are bases that have been coded with any of the Union of Pure and
 A logical vector containing TRUE if ambiguous bases or missing data are present, FALSE if not. Does not differentiate between the two classes of data.
 }
 
-\references{
-%% ~put references to the literature/web site here ~
-}
-
 \author{Samuel Brown <s_d_j_brown@hotmail.com>}
-
-\note{
-%%  ~~further notes~~
-}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

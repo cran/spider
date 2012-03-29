@@ -67,14 +67,9 @@ An object of class 'slidWin' which is a list containing the following elements:
 \item{treeMeasures}{Value of argument. Required for \code{\link{plot.slidWin}}.}
 
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

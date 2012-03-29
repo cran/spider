@@ -19,9 +19,7 @@ An object of class `DNAbin'.
 Logical. Should the function report the number of substitutions per nucleotide? Default of TRUE.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 A vector of length 1. If \code{prop = FALSE}, the mean number of substitutions between any two sequences is returned. If \code{prop = TRUE} (the default), this number is returned as the mean number of substitutions per nucleotide (i.e. the above divided by the length of the sequences).
 }
@@ -32,9 +30,6 @@ populations. _Genetics_ *105*, 437-460.
 }
 \author{
 Samuel Brown	<s_d_j_brown@hotmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

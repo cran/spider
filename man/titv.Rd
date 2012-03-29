@@ -16,27 +16,17 @@ titv(DNAbin)
 A DNA alignment of class `DNAbin'.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 A square matrix with dimensions of \code{length(dat)}. The upper triangle contains the number of transversions. The lower triangle contains the number of transitions.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
 data(dolomedes)
 

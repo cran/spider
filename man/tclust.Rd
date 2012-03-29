@@ -27,10 +27,6 @@ A list with each element giving the index of the individuals contained in each c
 Samuel Brown <s_d_j_brown@hotmail.com>
 }
 
-\note{
-%%  ~~further notes~~
-}
-
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{

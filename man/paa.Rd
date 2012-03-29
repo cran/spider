@@ -26,15 +26,7 @@ issue in systematic biology. _Trends in Ecology and Evolution_ *18* (9), 462-470
 
 \author{Samuel Brown <s_d_j_brown@hotmail.com>}
 
-\note{
-%%  ~~further notes~~
-}
-
 %% ~Make other sections like Warning with \section{Warning }{....} ~
-
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 
 \examples{
 #Create some exemplar data

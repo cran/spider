@@ -28,10 +28,6 @@ An object of class `density', which is a list containing the values calculated b
 Samuel Brown <s_d_j_brown@hotmail.com>
 }
 
-\note{
-%%  ~~further notes~~
-}
-
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{

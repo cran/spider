@@ -22,23 +22,11 @@ This function considers bases coded as '?' and 'N' as missing data. By default, 
 A numeric vector giving the number of missing bases in each sequence of the alignment.
 }
 
-\references{
-%% ~put references to the literature/web site here ~
-}
-
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>
 }
 
-\note{
-%%  ~~further notes~~
-}
-
 %% ~Make other sections like Warning with \section{Warning }{....} ~
-
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 
 \examples{
 data(anoteropsis)
