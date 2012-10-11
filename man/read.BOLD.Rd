@@ -35,7 +35,11 @@ read.BOLD(IDs)}
 }
 
 \section{Warning}{
-On 26 Oct 2011, attempts to access records using the eFetch system through a web browser resulted in an error, saying that eFetch and eSearch are offline for maintainance. As of 7 March 2012, both functions have been modified to interface with the new BOLD architecture, and work as expected.
+On 26 Oct 2011, attempts to access records using the eFetch system through a web browser resulted in an error, saying that eFetch and eSearch are offline for maintainance. 
+
+As of 7 March 2012, both functions have been modified to interface with the new BOLD architecture, and work as expected.
+
+29 Oct 2012: It appears that BOLD has taken eFetch offline permanently, rendering \code{read.BOLD} as it currently stands useless. While we may be able to work out something, this will require a complete rewrite of the function. \code{search.BOLD} continues to work as intended.
 
 To test if these services are running, check the following URLs in a web browser:
 \url{http://v3.boldsystems.org/index.php/Public_Ajax_RecordList?query=Pisauridae}

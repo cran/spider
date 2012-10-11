@@ -49,4 +49,9 @@ nucDiag(anoteropsis, anoSpp)
 anoNuc <- nucDiag(anoteropsis, anoSpp)
 as.character(anoteropsis[ ,anoNuc[[1]][1] ])
 
+
+
+data(sarkar)
+sarkarSpp <- substr(dimnames(sarkar)[[1]], 1, 3)
+nucDiag(sarkar, sarkarSpp)
 }

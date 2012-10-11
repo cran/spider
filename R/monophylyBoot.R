@@ -13,8 +13,7 @@ function (phy, sppVector, DNAbin, thresh = 0.7, reroot = TRUE, pp = NA, singleto
     sppTab <- sapply(xxx, length)
     singletons <- which(sppTab == 1)
     nonSingletons <- which(sppTab != 1)
-    ifelse(is.na(pp), yyy <- .Call("bipartition", phy$edge, length(phy$tip.label), 
-        phy$Nnode, PACKAGE = "ape"), yyy <- pp)
+    ifelse(is.na(pp), yyy <- prop.part(phy), yyy <- pp)
     zzz <- sapply(yyy, length)
     defNon <- which(!sppTab %in% zzz)
     poss <- which(sppTab %in% zzz)
