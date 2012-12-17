@@ -24,7 +24,9 @@ read.BOLD(IDs)}
 
 \code{stats.BOLD} retrieves the total number of records for the given taxon.
 
-\code{read.BOLD} downloads the sequences associated with the process identification numbers using the eFetch web service offered by BOLD to enable batch retrieval of records.
+\code{read.BOLD} downloads the sequences associated with the process identification numbers using a brute force method of downloading the specimen record, then searching and splitting the HTML code to remove the relevant information. This process is likely to make the function fairly unstable if BOLD make any changes to their website.
+
+Previous versions of \code{read.BOLD} used the eFetch web service offered by BOLD to enable batch retrieval of records, however from October 2012 BOLD deprecated eFetch without providing a replacement service.
 
 }
 
@@ -41,9 +43,7 @@ As of 7 March 2012, both functions have been modified to interface with the new 
 
 29 Oct 2012: It appears that BOLD has taken eFetch offline permanently, rendering \code{read.BOLD} as it currently stands useless. While we may be able to work out something, this will require a complete rewrite of the function. \code{search.BOLD} continues to work as intended.
 
-To test if these services are running, check the following URLs in a web browser:
-\url{http://v3.boldsystems.org/index.php/Public_Ajax_RecordList?query=Pisauridae}
-\url{http://services.boldsystems.org/eFetch.php?record_type=full&id_type=processid&ids=(ARONT259-09)&return_type=text}
+17 Dec 2012: A new version of \code{read.BOLD} has been released that appears to work (for the time being).
 }
 
 \references{

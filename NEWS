@@ -1,4 +1,12 @@
 ############################################
+                                SPIDER VERSION 1.2-0
+				Released 17 November 2012
+				
+
+-- Functions added: heatmapSpp
+-- read.BOLD: Function completely rewritten to compensate for BOLD deprecating their eFetch system
+
+############################################
                                 SPIDER VERSION 1.1-5
 				Released 11 October 2012
 				
@@ -7,13 +15,12 @@
 -- monophylyBoot: Code changed from calling the ape C routine "bipartition" directly, to using prop.part()
 -- tree.comp: Code changed from calling the ape C routine "bipartition" directly, to using prop.part()
 
-
 ############################################
                                 SPIDER VERSION 1.1-4
 				Released 17 June 2012
 				
 
--- sarkar: The addition of a dataset contatining the dummy sequences published in Sarkar et al to illustrate the different categories of diagnostic nucleotides.
+-- sarkar: The addition of a dataset containing the dummy sequences published in Sarkar et al to illustrate the different categories of diagnostic nucleotides.
 
 ############################################
                                 SPIDER VERSION 1.1-3

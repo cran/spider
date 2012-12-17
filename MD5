@@ -1,11 +1,12 @@
-970b5fc670f425614058707a780f21e2 *DESCRIPTION
+8cffbff42a320767c6a0286d4ba211d5 *DESCRIPTION
 8c59543cbb8c8f589241363a94faf853 *NAMESPACE
-b8ef63dad4bf1c6964eee401f83be558 *NEWS
+6b9a57a3e908bf386c8d99ad161a4e59 *NEWS
 e62af89c4a267ddca83f35e3fe45aee2 *R/bestCloseMatch.R
 0e75edb6a63d0b769545a3443f1e3e14 *R/chaoHaplo.R
 4eff78217d84219aaebc735c28541926 *R/checkDNA.R
 5e3aa555d847d01f976df668706ce0ed *R/dataStat.R
 595c83f688fd9a2c296d8eb245aafa73 *R/haploAccum.R
+0279eec6c00e72eba4ceaf40df02e009 *R/heatmapSpp.R
 7589015d4d0e23e0e375a20013be8eff *R/is.ambig.R
 e1b514b3ba62439d0c880a4fc16da87d *R/localMinima.R
 1fc67e9c3058d97ddc13df5d33716480 *R/maxInDist.R
@@ -19,7 +20,7 @@ db011b6dc2ec60650faedd89f2f4f3af *R/paa.R
 f67592797d2df601b3b5bbc8f9aabd61 *R/plot.slidWin.R
 a2241669fe8df719b7c5236be8d14d73 *R/polyBalance.R
 81468d47d63834ba47fe57655f67bf06 *R/rankSlidWin.R
-ee1b1085a3b5f06287553aa916691c4a *R/read.BOLD.R
+06830956b67fa1d383f114c296bc8d5d *R/read.BOLD.R
 c8ab5fa44a4ed546ccf4ff77f18d0c4e *R/read.GB.R
 ffc7ad16cf592a257baa14cd85a77764 *R/rmSingletons.R
 01dce3948a335e691f124a160208aad6 *R/rosenberg.R
@@ -50,6 +51,7 @@ a61e123913ecc29af55b17bdca40b8d8 *man/chaoHaplo.Rd
 daf7029dc23352d4080fe069ef41f1be *man/dataStat.Rd
 e7c02820ae571e81c13adb7f068be728 *man/dolomedes.Rd
 b35336167fe6b8df5adff3b35f433cbb *man/haploAccum.Rd
+f23d99ed5511d13b7e8d9448d0da6112 *man/heatmapSpp.Rd
 49de57ec34792547dd95134e3401d29f *man/is.ambig.Rd
 060748e190f0e69b41ca5c7fe273cdb9 *man/localMinima.Rd
 6b17b7ececd391709f96aa424255456a *man/monophyly.Rd
@@ -61,7 +63,7 @@ c51185d75775b4412904cc5612a3bab9 *man/plot.haploAccum.Rd
 1464a0d035a146a7ffc06186f6d888e1 *man/plot.slidWin.Rd
 596598619f59d979962f958adf55dd66 *man/polyBalance.Rd
 91212b502f4232ab8de1b32b7c7e187b *man/rankSlidWin.Rd
-37584d8b1f7621703e212c7193aa9eb8 *man/read.BOLD.Rd
+197f3386d00be5bad7999ecf32189d0d *man/read.BOLD.Rd
 b04e908ea0703656331dd88d5214012b *man/read.GB.Rd
 6a877d3d9110047e4b643eba1dd84cb8 *man/rmSingletons.Rd
 d5a18ce2ab6ba74a8298eb9bb909ab8e *man/rosenberg.Rd
@@ -72,7 +74,7 @@ e327eac7dd250d34ac50c1a6e8064cc0 *man/sarkar.Rd
 0fd14c4652e09ef5618b371b9be57618 *man/slideBoxplots.Rd
 ea4e754f069b34fe3fc3d9e63caa9852 *man/slideNucDiag.Rd
 53579bb4209920f371ff0387f6785195 *man/slidingWindow.Rd
-eee4182958ed91aae3e8868dacd80aaf *man/spider-package.Rd
+f12dba5e5786349fb6e07f70022ff2ba *man/spider-package.Rd
 84d9cd7f8592d23479bd367b572ca17d *man/sppDist.Rd
 ba0afcd2a953082fbf615c05e0c88969 *man/sppDistMatrix.Rd
 596a4ddc1e9f1a7b129e18390cf6c936 *man/sppVector.Rd
