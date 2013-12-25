@@ -74,6 +74,7 @@ spp2 <- c(rep(LETTERS[1:4], rep(3,4)), LETTERS[5:7])
 monophyly(tr2, spp2)
 
 #Empirical data
+\dontrun{
 data(anoteropsis)
 anoTree <- nj(dist.dna(anoteropsis))
 anoSpp <- sapply(strsplit(dimnames(anoteropsis)[[1]], split="_"), 
@@ -98,6 +99,6 @@ woodMono$BSvalues
 
 monophylyBoot(woodTree, woodSpp, woodmouse, reroot = FALSE)
 monophylyBoot(woodTree, woodSpp, woodmouse, thresh = 0.9, reroot = FALSE)
-
+}
 
 }

@@ -5,7 +5,7 @@
 Species Vectors
 }
 \description{
-A vector that gives an identity to the individuals in various analyses.
+A grouping variable that gives an identity to the individuals in various analyses.
 }
 \details{
 Species vectors are the key concept behind a lot of \code{spider}'s functionality. They are the method used to group data from individuals into species. It is important to note that "species" in this context can mean any cluster (real or otherwise) that is of interest. Populations, demes, subspecies and genera could be the taxa segregated by "species vectors".

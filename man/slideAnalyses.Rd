@@ -78,12 +78,13 @@ Samuel Brown <s_d_j_brown@hotmail.com>
 \code{\link{dist.dna}}, \code{\link{plot.slidWin}}, \code{\link{rankSlidWin}}, \code{\link{slideNucDiag}}.
 }
 \examples{
+\dontrun{
 data(dolomedes)
 doloDist <- dist.dna(dolomedes)
 doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
 
 slideAnalyses(dolomedes, doloSpp, 200, interval=10, treeMeasures=TRUE)
-
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -20,10 +20,12 @@ An object of class `DNAbin'.
 The function assumes a large number of specimens have been sampled and that duplicate haplotypes have not been removed. Interpretation becomes difficult when more than one species is included in the dataset.
 }
 \value{
-An integer giving the estimated total number of haplotypes in the population.
+An vector of length three, giving the estimated total number of haplotypes in the population, and lower and upper 95\% confidence limits.
 }
 \references{
 Vink, C. J., McNeill, M. R., Winder, L. M., Kean, J. M., and Phillips, C. B. (2011). PCR analyses of gut contents of pasture arthropods. In: Paddock to PCR: Demystifying Molecular Technologies for Practical Plant Protection (eds. Ridgway, H. J., Glare, T. R., Wakelin, S. A., O'Callaghan, M.), pp. 125-134. New Zealand Plant Protection Society, Lincoln.
+
+Chao, A. (1989). Estimating population size for sparse data in capture-recapture experimnets. _Biometrics_ *45* 427-438.
 }
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>

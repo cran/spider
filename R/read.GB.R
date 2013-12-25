@@ -40,7 +40,7 @@ function(access.nb, seq.names = access.nb, species.names = TRUE, gene=TRUE, acce
         for (i in 1:N) tmp3[i] <- unlist(strsplit(X[def[i]], "ACCESSION +"))[2]
         attr(obj, "accession_num") <- gsub(" ", "_", tmp3)
     }
-    names(obj)<-paste(attr(obj,"accession_num"), "|", attr(obj,"species"))
+    names(obj)<-paste(attr(obj,"accession_num"), "|", attr(obj,"species"), sep = "")
     obj
 }
 }
