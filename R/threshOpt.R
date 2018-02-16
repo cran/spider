@@ -1,3 +1,50 @@
+#' Threshold optimisation
+#' 
+#' Determines the positive, negative, false positive and false negative rates
+#' of identification accuracy for a given threshold.
+#' 
+#' When run over a range of thresholds, this function allows the optimisation
+#' of threshold values based on minimising the identification error rates. See
+#' the example below for more details.
+#' 
+#' @param distobj Distance matrix.
+#' @param sppVector Species vector (see \code{\link{sppVector}}).
+#' @param threshold Threshold distance for delimiting intra- and inter-specific
+#' variation. Default of 0.01.
+#' @return A table giving the threshold and number of negative and positive
+#' identifications, number of false negative and false positive
+#' identifications, and the cumulative error.
+#' @author Rupert Collins <rupertcollins@@gmail.com>
+#' @seealso \code{\link{localMinima}}.
+#' @references Meyer, C. P., and Paulay, G. (2005). DNA barcoding: error rates
+#' based on comprehensive sampling. _PLoS Biology_ *3* (12), 2229-2238.
+#' @keywords Barcoding
+#' @examples
+#' 
+#' data(anoteropsis)
+#' anoDist <- ape::dist.dna(anoteropsis)
+#' anoSpp <- sapply(strsplit(dimnames(anoteropsis)[[1]], split="_"), 
+#'     function(x) paste(x[1], x[2], sep="_"))
+#' threshOpt(anoDist, anoSpp)
+#' 
+#' data(dolomedes)
+#' doloDist <- ape::dist.dna(dolomedes)
+#' doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
+#' threshOpt(doloDist, doloSpp)
+#' 
+#' #Conduct the analysis over a range of values to determine the optimum threshold
+#' threshVal <- seq(0.001,0.02, by = 0.001)
+#' opt <- lapply(threshVal, function(x) threshOpt(doloDist, doloSpp, thresh = x))
+#' optMat <- do.call(rbind, opt)
+#' graphics::barplot(t(optMat)[4:5,], names.arg=optMat[,1], xlab="Threshold values", 
+#'     ylab="Cumulative error")
+#' graphics::legend(x = 2.5, y = 29, legend = c("False positives", "False negatives"), 
+#'     fill = c("grey75", "grey25"))
+#' 
+#' @importFrom ape dist.dna
+#' @importFrom graphics barplot
+#' @importFrom graphics legend
+#' @export threshOpt
 threshOpt <- function(distobj, sppVector, threshold = 0.01){
 	distobj <- as.matrix(distobj)
 	#individual (diag) values excluded

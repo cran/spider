@@ -1,4 +1,44 @@
 ############################################
+                                SPIDER VERSION 1.5.0
+				Released 15 February 2018
+				
+				
+-- Moved from R-Forge (https://r-forge.r-project.org/projects/spider/).
+-- Now at Github (https://github.com/boopsboops/spider).
+-- Package maintainer now Rupert A. Collins.
+-- Now using Roxygen documentation (Rd source now in R functions).
+-- Fixes to broken man pages.
+-- Imported package functions now explicitly called using 'importFrom' and automatically added to namespace.
+-- Added the testthat infrastructure.
+-- Functions `read.BOLD`, `search.BOLD`, and `stats.BOLD` have been deprecated in favour of using the better functions in the rOpenSci 'bold' package.
+-- Function `read.GB` has been deprecated in favour of using the better functions in the 'rentrez', 'traits', and 'ape' packages.
+
+############################################
+                                SPIDER VERSION 1.4-2
+				Released 13 May 2017
+				
+				
+-- Extra options added to heatmapSpp. Option of showing the data on the heatmap now available.
+-- Bug fix for seqStat
+
+############################################
+                                SPIDER VERSION 1.4-1
+				Released 5 July 2016
+				
+				
+-- External functions imported in NAMESPACE
+-- Minor change to nucDiag help file
+
+############################################
+                                SPIDER VERSION 1.4-0
+				Released 20 June 2016
+				
+				
+-- Bugs in heatmapSpp and plot.ordinDNA fixed
+-- New option "names" added for bestCloseMatch and threshID
+-- New functions: rnucDiag, blockAlignment, and minInDist
+
+############################################
                                 SPIDER VERSION 1.3-0
 				Released 25 December 2013
 				

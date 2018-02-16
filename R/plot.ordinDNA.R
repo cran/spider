@@ -1,3 +1,92 @@
+#' Plot an 'ordinDNA' object
+#' 
+#' Plots an ordination of the Principal Components Analysis conducted by
+#' \code{\link{ordinDNA}}.
+#' 
+#' \code{plot.ordinDNA} calculates the centroid and radius of the most variable
+#' individual for each species in the multivariate space of the Principal
+#' Components Analysis object given.
+#' 
+#' \code{majorAxes} plots the axes in the form \code{c(x, y)}. The maximum
+#' number of axes calculated is the number of specimens in the dataset minus
+#' one.
+#' 
+#' \code{sppBounds} has the following options: \code{"net"} (the default)
+#' creates a complete graph between all individuals within a species.  If
+#' \code{"circles"} is specified, a circle is drawn with a center fixed on the
+#' centroid, and a radius of the length to the maximally distant individual.
+#' Selecting the option of \code{"none"} means the individuals are not
+#' connected in any way.
+#' 
+#' @param x An object of class `ordinDNA'.
+#' @param majorAxes Numeric. Gives the numbers of the major axes that should be
+#' plotted. Default of the first two major axes (\code{majorAxes = c(1,2)})
+#' @param plotCol A vector of RGB colours giving the colours of the points and
+#' circles. Must be in the form of a character vector with elements "#XXXXXX"
+#' where XXXXXX gives the hexadecimal value for the colours desired. Default of
+#' \code{"default"}. Colours are recycled if necessary.
+#' @param trans A character vector giving the hexadecimal value for the
+#' transparency of the circles. Default of "CC".
+#' @param textcex Numeric. Controls the size of the text giving the species
+#' value of the circles.
+#' @param pchCentroid Numeric. Controls the shape of the point showing the
+#' centroid of the circle for each species. Default of FALSE, no plotting of
+#' centroid position.
+#' @param sppBounds Option to determine the method of visualising conspecific
+#' points. Options of \code{"net"} (the default), \code{"none"} or
+#' \code{"circles"}.
+#' @param sppNames Logical. Should species names be plotted? Default of TRUE.
+#' @param namePos Character vector of length 1 giving the position where the
+#' species names should be plotted. Possible values are: "top" and "bottom",
+#' anything else plots the names at the centroid.
+#' @param ptPch Numeric. Number of the symbol to be used for plotting. see
+#' \code{\link{points}}. Default of 21.
+#' @param ptCex Numeric. Number governing the size of the points. Default of
+#' 0.5.
+#' @param netWd Numeric. Number governing the width of the lines in the netowk.
+#' Default of 1.
+#' @param ... Other arguments to be passed to \code{plot}.
+#' @return Plots an ordination of the first two major axes showing the
+#' positions of each individual (squares), the centroid of each species
+#' (circular bullet and name of species), and the variation in the species
+#' (large circle, the radius of which is the distance to the furthest
+#' individual from the centroid).
+#' @author Samuel Brown <s_d_j_brown@@hotmail.com>
+#' @seealso \code{\link{ordinDNA}}, \code{\link{cgraph}}.
+#' @keywords Visualisation
+#' @examples
+#'
+#' data(dolomedes)
+#' doloDist <- ape::dist.dna(dolomedes)
+#' doloSpp <- substr(dimnames(dolomedes)[[1]], 1, 5)
+#' 
+#' doloOrd <- ordinDNA(doloDist, doloSpp)
+#' 
+#' graphics::plot(doloOrd)
+#' graphics::plot(doloOrd, majorAxes = c(1,3))
+#' graphics::plot(doloOrd, textcex = 0.001)
+#' graphics::plot(doloOrd, plotCol = c("#FF0000", "#00FF00", "#0000FF"))
+#' graphics::plot(doloOrd, namesPos = "bottom")
+#' graphics::plot(doloOrd, namesPos = "centre")
+#' 
+#' data(anoteropsis)
+#' anoDist <- ape::dist.dna(anoteropsis)
+#' anoSpp <- sapply(strsplit(dimnames(anoteropsis)[[1]], split="_"), 
+#'     function(x) paste(x[1], x[2], sep="_"))
+#'     
+#' anoOrd <- ordinDNA(anoDist, anoSpp)
+#' 
+#' plot(anoOrd, sppBounds = "circles")
+#'
+#' @importFrom stats aggregate
+#' @importFrom stats dist
+#' @importFrom graphics plot
+#' @importFrom graphics symbols
+#' @importFrom graphics points
+#' @importFrom graphics text
+#' @importFrom ape dist.dna
+#'
+#' @export
 plot.ordinDNA <- function(x, majorAxes = c(1,2), plotCol = "default", trans = "CC", textcex = 0.7, pchCentroid = FALSE, sppBounds = "net", sppNames = TRUE, namePos = "top", ptPch = 21, ptCex = 0.5, netWd = 1, ...){
 	#Colours
 	if(plotCol[1] == "default") {
@@ -8,13 +97,14 @@ plot.ordinDNA <- function(x, majorAxes = c(1,2), plotCol = "default", trans = "C
 		"#023FA5", "#5868AC", "#848DBC", "#A9AECB", "#C8CAD8", "#DDDEE0", 
 		"#E1DDDD", "#D9C6C9", "#CEA5AC", "#BE7E8A", "#A94F64", "#8E063B"
 		)
-		} else plotCol <-  rep(plotCol, length(x$sppVector)/length(plotCol))
+		} else plotCol <- plotCol
+	plotCol <-  rep(plotCol, ceiling(length(x$sppVector)/length(plotCol)))
 	transCol <- paste(plotCol, trans, sep = "")
 	sppVector <- x$sppVector
 	sppVecFac <- as.factor(sppVector)
 	sppVecFacNum <- as.numeric(unique(sppVecFac))
-
-	
+	#
+	#
 	#Figure out the centroid positions
 	mat <- x$pco$points[, majorAxes]
 	centroids <- aggregate(mat, list(sppVector), mean)
@@ -27,23 +117,25 @@ plot.ordinDNA <- function(x, majorAxes = c(1,2), plotCol = "default", trans = "C
 		max(bb[,1])
 	}
 	radius <- sapply(unique(sppVector), function(xx) maxDist(mat[sppVector == xx,]))
-	radius <- radius[match(sort(names(radius)), names(radius))]
-	
-	# net setup
+	names(radius) <- unique(sppVector)
+	radius <- radius[match(centroids$spp, names(radius))]
+	#
+	##### net setup
 	sppPoints <- lapply(unique(sppVector), function(xx) mat[sppVector == xx, , drop = FALSE])
 	topPoint <- sapply(sppPoints, function(xx) xx[which.max(xx[,2]), ])
-	
-	#Proportion of variation in each axis
+	#
+	####Proportion of variation in each axis
 	propVar <- round(x$pco$eig/max(cumsum(x$pco$eig)) * 100, 1)
-	
+	#
 	if(namePos == "top") labRadius <- radius else if(namePos == "bottom") labRadius <- -radius else labRadius <- 0
-
+	#
 	plot(mat[,1], mat[,2], type = "n", asp = 1, xlab = paste("Major axis ", majorAxes[1], " (", propVar[majorAxes[1]], "%)", sep = ""), ylab = paste("Major axis ", majorAxes[2], " (", propVar[majorAxes[2]], "%)", sep = ""), ...)
 	if(sppBounds == "circles") symbols(centroids[,2], centroids[,3], circles = radius, fg = transCol[as.numeric(sort(unique(sppVecFac)))], bg = transCol[as.numeric(sort(unique(sppVecFac)))], inches = FALSE, add = TRUE)
 	if(sppBounds == "net") lapply(1:length(sppPoints), function(xx) cgraph(sppPoints[[xx]], col = plotCol[sppVecFacNum[xx]], lwd = netWd))	
 	if(pchCentroid) points(centroids[,2], centroids[,3], pch = ptPch, bg = plotCol[as.numeric(sort(unique(sppVecFac)))])
 	if(sppNames & namePos != "topPoint") text(centroids[,2], centroids[,3] + labRadius, labels = sort(unique(sppVector)), cex = textcex, pos = 3, offset = 0.06) else if(sppNames & namePos == "topPoint") text(topPoint[1, ], topPoint[2, ], labels = unique(sppVector), cex = textcex, pos = 3, offset = 0.06)
 	points(mat[,1], mat[,2], pch=22, bg = plotCol[as.numeric(sppVecFac)], cex = ptCex)
-	#~ list(radius, centroids, mat)
+	#list(radius, centroids, mat)
 	#sppPoints
+	list(transCol, plotCol)
 }
