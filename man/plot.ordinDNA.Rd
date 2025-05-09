@@ -4,10 +4,21 @@
 \alias{plot.ordinDNA}
 \title{Plot an 'ordinDNA' object}
 \usage{
-\method{plot}{ordinDNA}(x, majorAxes = c(1, 2), plotCol = "default",
-  trans = "CC", textcex = 0.7, pchCentroid = FALSE, sppBounds = "net",
-  sppNames = TRUE, namePos = "top", ptPch = 21, ptCex = 0.5,
-  netWd = 1, ...)
+\method{plot}{ordinDNA}(
+  x,
+  majorAxes = c(1, 2),
+  plotCol = "default",
+  trans = "CC",
+  textcex = 0.7,
+  pchCentroid = FALSE,
+  sppBounds = "net",
+  sppNames = TRUE,
+  namePos = "top",
+  ptPch = 21,
+  ptCex = 0.5,
+  netWd = 1,
+  ...
+)
 }
 \arguments{
 \item{x}{An object of class `ordinDNA'.}
@@ -46,7 +57,7 @@ anything else plots the names at the centroid.}
 \item{ptCex}{Numeric. Number governing the size of the points. Default of
 0.5.}
 
-\item{netWd}{Numeric. Number governing the width of the lines in the netowk.
+\item{netWd}{Numeric. Number governing the width of the lines in the network.
 Default of 1.}
 
 \item{...}{Other arguments to be passed to \code{plot}.}
@@ -73,7 +84,7 @@ one.
 
 \code{sppBounds} has the following options: \code{"net"} (the default)
 creates a complete graph between all individuals within a species.  If
-\code{"circles"} is specified, a circle is drawn with a center fixed on the
+\code{"circles"} is specified, a circle is drawn with a centre fixed on the
 centroid, and a radius of the length to the maximally distant individual.
 Selecting the option of \code{"none"} means the individuals are not
 connected in any way.

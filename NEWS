@@ -1,4 +1,12 @@
 ############################################
+                                SPIDER VERSION 1.5.1
+				Released 29 April 2025
+				
+				
+-- Fixed CRAN refman links - package anchors for all Rd \link{} targets added
+-- Improved DESCRIPTION and CITATION
+
+############################################
                                 SPIDER VERSION 1.5.0
 				Released 15 February 2018
 				

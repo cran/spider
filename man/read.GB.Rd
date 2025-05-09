@@ -2,10 +2,16 @@
 % Please edit documentation in R/read.GB.R
 \name{read.GB}
 \alias{read.GB}
-\title{Download sequences from Genbank with metadata.}
+\title{Download sequences from GenBank with metadata.}
 \usage{
-read.GB(access.nb, seq.names = access.nb, species.names = TRUE,
-  gene = TRUE, access = TRUE, as.character = FALSE)
+read.GB(
+  access.nb,
+  seq.names = access.nb,
+  species.names = TRUE,
+  gene = TRUE,
+  access = TRUE,
+  as.character = FALSE
+)
 }
 \arguments{
 \item{access.nb}{A character vector giving the GenBank accession numbers to
@@ -49,7 +55,7 @@ the gene region from which sequences were derived.
 \dontrun{
 read.GB("AY059961")
 
-#Download the sequences making data(anoteropsis) from Genbank
+#Download the sequences making data(anoteropsis) from GenBank
 nums <- 59961:59993
 seqs <- paste("AY0", nums, sep="")
 dat <- read.GB(seqs)
@@ -60,7 +66,7 @@ attr(dat, "accession_num")}
 
 }
 \seealso{
-\code{\link{read.GenBank}}.
+\code{\link[ape]{read.GenBank}}.
 }
 \author{
 Samuel Brown <s_d_j_brown@hotmail.com>

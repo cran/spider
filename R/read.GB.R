@@ -1,4 +1,4 @@
-#' Download sequences from Genbank with metadata.
+#' Download sequences from GenBank with metadata.
 #' 
 #' Downloads sequences associated with the given accession numbers into a
 #' `DNAbin' class.
@@ -24,14 +24,14 @@
 #' \code{"gene"}, and \code{"accession_num"}.
 #' @section Warning: 15 Feb 2018: 'read.GB' is deprecated. Please use the rOpenSci packages 'rentrez' and 'traits', or 'ape' for better functionality.
 #' @author Samuel Brown <s_d_j_brown@@hotmail.com>
-#' @seealso \code{\link{read.GenBank}}.
+#' @seealso \code{\link[ape]{read.GenBank}}.
 #' @keywords Datasets
 #' @examples
 #' 
 #' \dontrun{
 #' read.GB("AY059961")
 #' 
-#' #Download the sequences making data(anoteropsis) from Genbank
+#' #Download the sequences making data(anoteropsis) from GenBank
 #' nums <- 59961:59993
 #' seqs <- paste("AY0", nums, sep="")
 #' dat <- read.GB(seqs)

@@ -22,7 +22,7 @@
 #' 
 #' \code{threshID} conducts a threshold-based analysis, similar to that
 #' conducted by the "Identify Specimen" tool provided by the Barcode of Life
-#' Database (\url{http://www.boldsystems.org/index.php/IDS_OpenIdEngine}). It
+#' Database (\url{https://boldsystems.org/}). It
 #' is more inclusive than \code{bestCloseMatch}, considering ALL sequences
 #' within the given threshold. If \code{names = TRUE}, a list is returned
 #' containing the names of all species represented by specimens within the
@@ -31,7 +31,7 @@
 #' These functions are not recommended as identification tools, though they can
 #' be used as such when \code{names = TRUE}.
 #' 
-#' @param distobj A distance object (usually from \code{\link{dist.dna}}).
+#' @param distobj A distance object (usually from \code{\link[ape]{dist.dna}}).
 #' @param sppVector Vector of species names. See \code{\link{sppVector}}.
 #' @param names Logical. Should the names of the nearest match be shown?
 #' Default of FALSE.
@@ -46,7 +46,7 @@
 #' \code{nearNeighbour} returns a logical vector or (if \code{names = TRUE})
 #' the name for the nearest individual.
 #' @author Samuel Brown <s_d_j_brown@@hotmail.com>
-#' @seealso \code{\link{nearNeighbour}}, \code{\link{threshID}}, \code{\link{dist.dna}}, \code{\link{sppVector}} %% ~~objects to See
+#' @seealso \code{\link{nearNeighbour}}, \code{\link{threshID}}, \code{\link[ape]{dist.dna}}, \code{\link{sppVector}} %% ~~objects to See
 #' Also as \code{\link{help}}, ~~~
 #' @references Meier, R., Shiyang, K., Vaidya, G., & Ng, P. (2006). DNA
 #' barcoding and taxonomy in Diptera: a tale of high intraspecific variability

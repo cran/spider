@@ -45,7 +45,7 @@ deprecated eFetch without providing a replacement service.
 \section{Warning}{
  On 26 Oct 2011, attempts to access records using the
 eFetch system through a web browser resulted in an error, saying that eFetch
-and eSearch are offline for maintainance.
+and eSearch are offline for maintenance.
 
 As of 7 March 2012, both functions have been modified to interface with the
 new BOLD architecture, and work as expected.
@@ -74,7 +74,7 @@ ape::write.dna(pisaurid, "filename.fas", format="fasta")}
 
 }
 \references{
-BOLD web services: \url{http://www.boldsystems.org/index.php/resources/api?type=webservices}.
+BOLD web services: \url{https://boldsystems.org/data/api/?type=webservices}.
 
 BOLD version 3.0 \url{http://v3.boldsystems.org/}.
 }

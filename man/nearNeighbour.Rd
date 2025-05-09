@@ -7,7 +7,7 @@
 nearNeighbour(distobj, sppVector, names = FALSE)
 }
 \arguments{
-\item{distobj}{A distance object (usually from \code{\link{dist.dna}}).}
+\item{distobj}{A distance object (usually from \code{\link[ape]{dist.dna}}).}
 
 \item{sppVector}{Vector of species names. See \code{\link{sppVector}}.}
 
@@ -50,7 +50,7 @@ of the closest individual is returned. Ties are decided by majority rule.
 
 \code{threshID} conducts a threshold-based analysis, similar to that
 conducted by the "Identify Specimen" tool provided by the Barcode of Life
-Database (\url{http://www.boldsystems.org/index.php/IDS_OpenIdEngine}). It
+Database (\url{https://boldsystems.org/}). It
 is more inclusive than \code{bestCloseMatch}, considering ALL sequences
 within the given threshold. If \code{names = TRUE}, a list is returned
 containing the names of all species represented by specimens within the
@@ -92,7 +92,7 @@ barcoding and taxonomy in Diptera: a tale of high intraspecific variability
 and low identification success. _Systematic Biology_ *55* (5) 715-728.
 }
 \seealso{
-\code{\link{nearNeighbour}}, \code{\link{threshID}}, \code{\link{dist.dna}}, \code{\link{sppVector}} %% ~~objects to See
+\code{\link{nearNeighbour}}, \code{\link{threshID}}, \code{\link[ape]{dist.dna}}, \code{\link{sppVector}} %% ~~objects to See
 Also as \code{\link{help}}, ~~~
 }
 \author{
